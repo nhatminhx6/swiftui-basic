@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = UserViewModel()
+
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+            NavigationView {
+                List {
+                    Section(header: Text("Combine")) {
+                        NavigationLink(destination: CombineBasic()) {
+                            Text("Basic Combine")
+                        }
+                       
+                    }
+                }
+                .navigationBarTitle("Learning SwiftUI")
+            }
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}

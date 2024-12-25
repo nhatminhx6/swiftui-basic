@@ -14,6 +14,8 @@
 		CF58F2092D1BF7E6002816E2 /* swiftui_basic_learningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58F2082D1BF7E6002816E2 /* swiftui_basic_learningTests.swift */; };
 		CF58F2132D1BF7E6002816E2 /* swiftui_basic_learningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58F2122D1BF7E6002816E2 /* swiftui_basic_learningUITests.swift */; };
 		CF58F2152D1BF7E6002816E2 /* swiftui_basic_learningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58F2142D1BF7E6002816E2 /* swiftui_basic_learningUITestsLaunchTests.swift */; };
+		CF58F2232D1BFEF4002816E2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58F2222D1BFEF4002816E2 /* UserViewModel.swift */; };
+		CF58F2262D1C6183002816E2 /* CombineBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF58F2252D1C6183002816E2 /* CombineBasic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CF58F20E2D1BF7E6002816E2 /* swiftui-basic-learningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-basic-learningUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF58F2122D1BF7E6002816E2 /* swiftui_basic_learningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_basic_learningUITests.swift; sourceTree = "<group>"; };
 		CF58F2142D1BF7E6002816E2 /* swiftui_basic_learningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_basic_learningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF58F2222D1BFEF4002816E2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CF58F2252D1C6183002816E2 /* CombineBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBasic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		CF58F1F62D1BF7E5002816E2 /* swiftui-basic-learning */ = {
 			isa = PBXGroup;
 			children = (
+				CF58F2212D1BFED9002816E2 /* Modules */,
 				CF58F1F72D1BF7E5002816E2 /* swiftui_basic_learningApp.swift */,
 				CF58F1F92D1BF7E5002816E2 /* ContentView.swift */,
 				CF58F1FB2D1BF7E6002816E2 /* Assets.xcassets */,
@@ -125,6 +130,23 @@
 				CF58F2142D1BF7E6002816E2 /* swiftui_basic_learningUITestsLaunchTests.swift */,
 			);
 			path = "swiftui-basic-learningUITests";
+			sourceTree = "<group>";
+		};
+		CF58F2212D1BFED9002816E2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CF58F2242D1C6162002816E2 /* Combine */,
+				CF58F2222D1BFEF4002816E2 /* UserViewModel.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CF58F2242D1C6162002816E2 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				CF58F2252D1C6183002816E2 /* CombineBasic.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF58F2262D1C6183002816E2 /* CombineBasic.swift in Sources */,
 				CF58F1FA2D1BF7E5002816E2 /* ContentView.swift in Sources */,
+				CF58F2232D1BFEF4002816E2 /* UserViewModel.swift in Sources */,
 				CF58F1F82D1BF7E5002816E2 /* swiftui_basic_learningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
